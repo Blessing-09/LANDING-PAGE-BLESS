@@ -1,30 +1,31 @@
-    import "./Card.css";
-    import Rigo from "/src/img/rigo-baby.jpg";
+import "./Card.css";
+import Rigo from "/src/img/rigo-baby.jpg";
 
-    const Card = () => {
-    return (
-        <div className="container mb-3 d-flex justify-content-center align-items-center"> 
-        <div className="row gy-3">
-            <div className="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
-            <CardArea />
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
-            <CardArea />
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
-            <CardArea />
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
-            <CardArea />
-            </div>
-        </div>
-        </div>
-    );
-    };
+const Card = () => {
+return (
+    <div className="container p-0 ">
+    <div className="row gy-3">
         
-    function CardArea() {
-    return (
-        <div className="card" style={{ width: "18rem" }}>
+            <CardArea />
+        
+        
+            <CardArea />
+        
+        
+            <CardArea />
+        
+        
+            <CardArea />
+        
+    </div>
+    </div>
+);
+};
+
+function CardArea() {
+return (
+    <div className="col-sm-12 col-lg-3">
+        <div className="card card-box">
         <img src={Rigo} className="card-img-top img-fluid img-rigo" alt="..." />
         <div className="card-body d-flex flex-column align-items-center">
             <h5 className="card-title">Card title</h5>
@@ -37,7 +38,8 @@
             </a>
         </div>
         </div>
-    );
-    }
+    </div>
+);
+}
 
-    export default Card;
+export default Card;

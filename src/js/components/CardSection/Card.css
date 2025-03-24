@@ -1,3 +1,6 @@
 .img-rigo {
     object-fit: contain;
 }
+.card-box {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
