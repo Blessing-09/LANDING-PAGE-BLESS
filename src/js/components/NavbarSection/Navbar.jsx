@@ -5,7 +5,7 @@ import "./Navbar.css"
 const Navbar = () => {
     return (
         <>
-        <nav className="navbar navbar-expand-lg navbar-light bg-success">
+        <nav className="navbar navbar-expand-lg navbar-light bg-success NavBarPepito">
             <div className="container-fluid">
             <a className="navbar-brand" href="#">
                 Start Bootstrap
